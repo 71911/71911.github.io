@@ -18,8 +18,9 @@
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">과제</h1>
+        <p class="lead text-muted">저장소</p>
         <p>
-          <a href="https://github.com/71911/71911.github.io" class="btn btn-secondary my-2" target="_blank">GitHub 저장소</a>
+          <a href="https://github.com/71911/71911.github.io" class="btn btn-secondary my-2">GitHub 저장소</a>
         </p>
       </div>
     </div>
@@ -52,8 +53,8 @@
             <p class="card-text">[SUBJECT]</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <a href="[LINK0]" class="btn btn-sm btn-outline-secondary">보기</button>
-                <a href="[LINK1]" class="btn btn-sm btn-outline-secondary">저장소</button>
+                <a href="[LINK]" class="btn btn-sm btn-outline-secondary">보기</button>
+                <!--<a href="[LINK]" class="btn btn-sm btn-outline-secondary">저장소</button>-->
               </div>
             </div>
           </div>
@@ -63,13 +64,12 @@
 const root = 'https://71911.github.io/';
 const repo = 'https://github.com/71911/71911.github.io/tree/main/';
 
-        const replaceHtml = (param0, param1, param2) => {
-            let _output = _template.replace('[SUBJECT]', param0).replace('[LINK0]', root + param1).replace('[LINK1]', repo + param2)
-            return _output;
+        const replaceHtml = (subject, link) => {
+            return _template.replace('[SUBJECT]', subject).replace('[LINK]', link)
         }
 
         for (let i in homework) {
-          document.getElementById('work').innerHTML = replaceHtml(homework[i].name, homework[i].link, homework[i].repolink);
+          document.getElementById('work').innerHTML = replaceHtml(homework[i].name, homework[i].link);
         }
 
     </script>
