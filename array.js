@@ -4,7 +4,7 @@ const homework = [
     link: "html5/basicHtml.html",
   },
    {
-    name: "테스트",
-    link: "html5/basicHtml.html",
+    name: "애국가",
+    link: "html5/anthem.html",
   },
 ]
