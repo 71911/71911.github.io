@@ -5,6 +5,7 @@
          <div class="card shadow-sm">
            <div class="card-body">
              <p class="card-text">[SUBJECT]</p>
+             <p class="card-text text-muted">[SRC]</p>
            </div>
          </div>
          </a>

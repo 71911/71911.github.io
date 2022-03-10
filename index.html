@@ -37,7 +37,7 @@
 
       <script> 
            const replaceHtml = (subject, link) => {
-               return template.replace('[SUBJECT]', subject).replace('[LINK]', link)
+               return template.replace('[SUBJECT]', subject).replace('[LINK]', link).replace('[SRC]', link)
            }
          
            for (const i in homework) {
