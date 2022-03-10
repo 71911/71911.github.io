@@ -8,6 +8,10 @@ const homework = [
     link: "html5/anthem.html",
   },
   {
+   name: "def",
+   link: "html5/def.html",
+ },
+  {
    name: "loveKorea",
    link: "html5/loveKorea.html",
  },
