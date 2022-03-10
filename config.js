@@ -5,8 +5,6 @@
          <div class="card shadow-sm">
            <div class="card-body">
              <p class="card-text">[SUBJECT]</p>
-             <div class="d-flex justify-content-between align-items-center">
-             </div>
            </div>
          </div>
          </a>
