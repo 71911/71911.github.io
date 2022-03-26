@@ -50,5 +50,5 @@ for (const i in classActive) {
 
 for(const i in homework) {
     let weekis = homework[i].week;
-    document.getElementById('v-pilltab-' + weekis).innerHTML += replaceHtml(homework[i].name, weekis, homework[i].link)
+    document.getElementById('v-pilltab-' + weekis).innerHTML += replaceHtml(homework[i].name, weekis, homework[i].src)
 }
