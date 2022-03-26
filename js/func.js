@@ -42,7 +42,7 @@ for (const i in weeks) {
 }
 
 const firstChild = document.getElementById('v-pills-tabContent').firstElementChild;
-const classActive = ['show', 'active']
+const classActive = ['show', 'active'];
 
 for (const i in classActive) {
     firstChild.classList.add(classActive[i])
