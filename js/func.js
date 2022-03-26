@@ -15,8 +15,9 @@ const template = `
 </div>
 `
 
-const replaceHtml = (subject, link) => {
-    return template.replace('[SUBJECT]', subject).replace('[LINK]', link).replace('[SRC]', link)
+const replaceHtml = (subject, week, src) => {
+    const link = `html5/${week}/${src}`;
+    return template.replace('[SUBJECT]', subject).replace('[LINK]', link).replace('[SRC]', src)
 }
 
 for (const i in homework) {
@@ -49,5 +50,5 @@ for (const i in classActive) {
 
 for(const i in homework) {
     let weekis = homework[i].week;
-    document.getElementById('v-pilltab-' + weekis).innerHTML += replaceHtml(homework[i].name, homework[i].link)
+    document.getElementById('v-pilltab-' + weekis).innerHTML += replaceHtml(homework[i].name, weekis, homework[i].link)
 }
