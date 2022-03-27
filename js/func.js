@@ -7,7 +7,7 @@ const template = `
 <a href="[LINK]" target=_blank>
 <div class="card shadow-sm">
   <div class="card-body">
-    <p class="card-text">[SUBJECT]</p>
+    <p class="card-text">[NAME]</p>
     <p class="card-text text-muted">[SRC]</p>
   </div>
 </div>
@@ -15,9 +15,9 @@ const template = `
 </div>
 `
 
-const replaceHtml = (subject, week, src) => {
-    const link = `html5/${week}/${src}`;
-    return template.replace('[SUBJECT]', subject).replace('[LINK]', link).replace('[SRC]', src)
+const replaceHtml = (name, week) => {
+    const link = `html5/${week}/${name}.html`;
+    return template.replace('[NAME]', name).replace('[LINK]', link).replace('[SRC]', name + '.html')
 }
 
 for (const i in homework) {
@@ -38,7 +38,7 @@ for (const i in weeks) {
     
     document.getElementById('v-pills-tabContent').innerHTML += `
     <div class="tab-pane fade" id="v-pills-${weeks[i]}" role="tabpanel">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="v-pilltab-${weeks[i]}"></div></div>`
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="v-pilltab-${weeks[i]}"><code style="color: black;padding: .5rem; font-size: .7rem; background-color: rgba(110,118,129,0.4); border-radius: 6px;"><code></div></div>`
 }
 
 const firstChild = document.getElementById('v-pills-tabContent').firstElementChild;
@@ -51,4 +51,11 @@ for (const i in classActive) {
 for(const i in homework) {
     let weekis = homework[i].week;
     document.getElementById('v-pilltab-' + weekis).innerHTML += replaceHtml(homework[i].name, weekis, homework[i].src)
+}
+
+for(const i in homework) {
+    let weekis = homework[i].week;
+    let name = homework[i].name;
+    let src = config.root + name + '.html<br>';
+    document.querySelector('#v-pilltab-' + weekis + ' code').innerHTML += src;
 }
