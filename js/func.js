@@ -56,6 +56,6 @@ for(const i in homework) {
 for(const i in homework) {
     let weekis = homework[i].week;
     let name = homework[i].name;
-    let src = config.root + name + '.html<br>';
+    let src = config.root + '/html5/' + weekis + '/' + name + '.html<br>';
     document.querySelector('#v-pilltab-' + weekis + ' code').innerHTML += src;
 }
