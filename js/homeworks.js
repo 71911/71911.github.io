@@ -99,4 +99,8 @@ const homework = [
     name: "basicSemantic",
     week: 4,
   },
+  {
+    name: "subjectTable",
+    week: 4,
+  },
 ]
