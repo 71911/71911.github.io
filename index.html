@@ -1,51 +1,205 @@
 <!doctype html>
 <html lang="ko">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="">
-      <title>과제</title>
-      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
-   </head>
-   <body>
-      <main>
-         <section class="py-5 text-center container">
-            <div class="row py-lg-5">
-               <div class="col-lg-6 col-md-8 mx-auto">
-                  <a href="https://github.com/71911/71911.github.io" target="_blank">
-                     <h1 class="fw-light">과제</h1>
-                  </a>
-                  <p>
-                     <A href="https://github.com/71911/71911.github.io/actions/workflows/pages/pages-build-deployment" target="_blank">
-                     <img src="https://github.com/71911/71911.github.io/actions/workflows/pages/pages-build-deployment/badge.svg">
-                     </A>
-                  </p>
-               </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ePortfolio (71911)</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+
+  <link href="/css/bootstrap_style.css" rel="stylesheet">
+  <link href="/css/custom_style.css" rel="stylesheet">
+
+
+</head>
+
+<body class="semi-gray text-white">
+  <div class="container bg-dark">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+
+      <a target="_blank" href="https://github.com/71911/71911.github.io/actions/workflows/pages/pages-build-deployment/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-decoration-none">
+        <span class="fs-4 text-white fw-bold">ePortfolio <small class="text-muted">(71911)</small> <img
+            src="https://github.com/71911/71911.github.io/actions/workflows/pages/pages-build-deployment/badge.svg"></span>
+      </a>
+
+      <ul class="nav nav-pills col-12 col-md-auto mb-2 justify-content-center mb-md-0" id="pills-tab" role="tablist">
+        <li class="nav-item active">
+          <button class="nav-link active" id="pills-introduce-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-introduce" type="button" role="tab">소개</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" id="pills-homeworks-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-homeworks" type="button" role="tab">과제</button>
+        </li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <a href="https://github.com/71911/71911.github.io" target=_blank class="btn btn-outline-secondary">Github</a>
+      </div>
+    </header>
+  </div>
+
+
+  <main>
+
+    <div class="tab-content" id="pills-tabContent">
+
+      <div class="tab-pane fade show active" id="pills-introduce" role="tabpanel" aria-labelledby="pills-introduce-tab"
+        tabindex="0">
+
+        <div class="album py-5 ">
+
+          <div class="container">
+            <div class="d-flex align-items-start"><div class="container">
+  <div class="main-body">
+  
+        <div class="row gutters-sm">
+          <div class="col-md-4 mb-3">
+            <div class="card bg-dark">
+              <div class="card-body">
+                <div class="d-flex flex-column align-items-center text-center" id="profile">
+                </div>
+              </div>
             </div>
-         </section>
-         <div class="album py-5 bg-light">
-            <div class="container">
-               <div class="d-flex align-items-start">
-
-                  <div class="d-flex align-items-start">
-
-                     <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="width: 150px;">
-</div>
-
-                     <div class="tab-content" id="v-pills-tabContent" style="width: 1100px;">
-</div>
-
-                   </div>
-
-               </div>
+            <div class="card  mt-3 bg-dark">
+              <h5 class="mx-3 mt-2"><center>링크 모음</centeR></h5>
+              <ul class="list-group bg-dark list-group-flush">
+                <li class="list-group-item bg-dark text-white d-flex justify-content-between align-items-center flex-wrap">
+                  <h6 class="mb-0">포트폴리오 사이트</h6>
+                  <span class="text-secondary">https://71911.github.io</span>
+                </li>
+                <li class="list-group-item bg-dark text-white d-flex justify-content-between align-items-center flex-wrap">
+                  <h6 class="mb-0">깃허브</h6>
+                  <span class="text-secondary">https://github.com/71911</span>
+                </li>
+              </ul>
             </div>
-         </div>
-      </main>
-      <script src="js/config.js"></script>
-      <script src="js/homeworks.js"></script>
-      <script src="js/functions.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-   </body>
+
+            <div class="card  mt-3 bg-dark">
+              <h5 class="mx-3 mt-2"><center>수상 내역</centeR></h5>
+              <ul class="list-group bg-dark list-group-flush">
+                <li class="list-group-item bg-dark text-white d-flex justify-content-between align-items-center flex-wrap">
+                  <h6 class="mb-0">2021 한국정보올림피아드</h6>
+                  <span class="text-secondary">대상</span>
+                </li>
+                <li class="list-group-item bg-dark text-white d-flex justify-content-between align-items-center flex-wrap">
+                  <h6 class="mb-0">대전시 소프트웨어 공모전</h6>
+                  <span class="text-secondary">은상</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card  mt-3 bg-dark">
+              <h5 class="mx-3 mt-2"><center>보유 자격증</centeR></h5>
+              <ul class="list-group bg-dark list-group-flush">
+                <li class="list-group-item bg-dark text-white d-flex justify-content-between align-items-center flex-wrap">
+                  <h6 class="mb-0">정보처리기사</h6>
+                  <span class="text-secondary">2019. 3. 14</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="col-md-8">
+            <div class="card bg-dark mb-3">
+              <div class="card-body" id="biography">
+
+              </div>
+            </div>
+
+            <div class="row gutters-sm">
+              <div class="col mb-3">
+                <div class="card bg-dark h-100">
+                  <div class="card-body">
+                    <h6 class="d-flex align-items-center mb-3">실력 평가</h6>
+                    <small>파이썬</small>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 60%;">60%</div>
+                    </div>
+                    <small>자바</small>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%;">85%</div>
+                    </div>
+                    <small>C#</small>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%;">90%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+  </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="tab-pane fade" id="pills-homeworks" role="tabpanel" aria-labelledby="pills-homeworks-tab"
+        tabindex="0">
+
+        <section class="py-5 text-center container bg-dark">
+          <div class="row py-lg-1">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 class="fw-light">과제</h1>
+              <p class="lead text-muted">인터넷응용 강의를 수강하며 수행한 과제들입니다.</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="album py-5 ">
+
+          <div class="container">
+            <div class="d-flex align-items-start">
+              <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              </div>
+              <div class="tab-content" id="v-pills-tabContent">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="text-white-50 mt-auto py-5">
+    <div class="container">
+      <p class="mb-1">&copy; Copyright 2022. 71911.github.io</p>
+    </div>
+  </footer>
+
+
+
+  <script src="list/config.js"></script>
+  <script src="list/homeworks.js"></script>
+  <script src="list/certificates.js"></script>
+  <script src="list/awards.js"></script>
+  <script src="list/clubs.js"></script>
+  <script src="list/introduce.js"></script>
+
+  <script src="js/function_introduce.js"></script>
+  <script src="js/functions_homeworks.js"></script>
+  <script src="js/functions_certificates.js"></script>
+  <script src="js/functions_clubs.js"></script>
+  <script src="js/functions_awards.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
 </html>

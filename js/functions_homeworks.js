@@ -3,7 +3,7 @@ const weeks = [];
 const template = `
     <div class="col">
     <a href="[LINK]" target=_blank>
-    <div class="card shadow-sm">
+    <div class="card bg-dark shadow-sm text-white">
     <div class="card-body">
         <p class="card-text">[NAME]</p>
         <p class="card-text text-muted">[SRC]</p>
@@ -36,8 +36,10 @@ for (const i in weeks) {
 
     document.getElementById('v-pills-tabContent').innerHTML += `
     <div class="tab-pane fade" id="v-pills-${weeks[i]}" role="tabpanel">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="v-pilltab-${weeks[i]}"><code style="color: black;padding: .5rem; font-size: .7rem; background-color: rgba(110,118,129,0.4); border-radius: 6px;"><code></div></div>`
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="v-pilltab-${weeks[i]}"><code style="display: block;color: black;padding: .5rem; font-size: .7rem; background-color: rgba(110,118,129,0.4); border-radius: 6px;"></code></div></div>`
 }
+
+document.getElementById('v-pills-tab').innerHTML += `<button class="nav-link semi-gray-text">Homewo</button>`
 
 const firstChild = document.getElementById('v-pills-tabContent').firstElementChild;
 const classActive = ['show', 'active'];
